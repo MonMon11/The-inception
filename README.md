@@ -1,7 +1,9 @@
 # The-inception
 idk what its the function of this, but it looks cool
 
-**Crear dos redes, para mabas VM**
+
+1. **Crear dos redes, para mabas VM**
+
 ----
 
 *Creaciòn de la Primer red*
@@ -16,14 +18,14 @@ idk what its the function of this, but it looks cool
 
 ---
 
-*Realizar el emparejamiento de ambas redes*
+2. *Realizar el emparejamiento de ambas redes*
 grupo de recursos/red/emparejamientos/agregar/
 ![image](https://user-images.githubusercontent.com/86898578/126700876-9577bd5d-c10d-4c00-acca-840451810c4f.png)
 *Aquí se agrega el vinculamiento, el segundo apartado es de la vinculaciòn de la otra red, de la 2 a la 1 (red2), al final se tiene que colocar la red a la que se vincula*
 
 ---
 
-*Creación de la Máquina virtual*
+3. *Creación de la Máquina virtual*
 ![image](https://user-images.githubusercontent.com/86898578/126702413-dbf816c5-7b47-464b-94c3-6f7e733ee160.png)
 *Se concecta a las redes antes creadad, la VM1 -> red1, y la VM2, a la red 2*
 
@@ -34,7 +36,7 @@ grupo de recursos/red/emparejamientos/agregar/
 
 ---
 
-*Concectando ambas máquinas virtuales, VM1/concectar/RDP/descargar archivo RDP*
+5. *Concectando ambas máquinas virtuales, VM1/concectar/RDP/descargar archivo RDP*
 ![image](https://user-images.githubusercontent.com/86898578/126703758-f042ae43-a0bb-4cb2-9b1a-9728c607647d.png)
 ---
 ![image](https://user-images.githubusercontent.com/86898578/126704405-d31c31b8-2a2f-446f-ad52-6319f3884e63.png)
@@ -48,7 +50,7 @@ grupo de recursos/red/emparejamientos/agregar/
 
 ---
 
-*En el escritorio de la máquina virtual, hay que abrir el power shell, o el cmd*
+6. *En el escritorio de la máquina virtual, hay que abrir el power shell, o el cmd*
 ![image](https://user-images.githubusercontent.com/86898578/126705363-d77bf54f-e4df-48db-8598-40c4c9ecb10a.png)
 ![image](https://user-images.githubusercontent.com/86898578/126706568-c5de7c4a-d442-44c1-bc04-bcc63c4b55bc.png)
 
@@ -56,6 +58,7 @@ grupo de recursos/red/emparejamientos/agregar/
 `New-NetFirewallRule -Display "Allow ICMPv4" -Protocol ICMPv4`
 
 *Encontrar en el apartado de redes cual es la ip privada de la vm2 (a la que queremos conectarnos), en este caso 10.1.0.4*
+
 *máquinas virtuales/MV1/redes/copiar la ip privada
 
 ` Ping 10.1.0.4`
